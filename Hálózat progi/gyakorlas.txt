@@ -1,0 +1,28 @@
+1. Kérd be egy dolgozatának pontszámát, és az alapján írd ki a dolgozat eredményét, 
+illetve, hogy hány pont kellett volna a jobb eredményhez.
+
+Ponthatárok:
+40-50 5
+
+30-39 4
+
+20-29 3
+
+10-19 2
+
+0-9   1
+
+2. Gyümölcsök
+Hozz létre egy osztályt gyümölcsök néven. 
+Írj hozzá egy konstruktor ami tartalmazza, hogy milyen gyümölcs, az árát, és, hogy hazai-e.
+
+Hozz létre egy függvényt származás néven ahol logikai értékek segítségével eldöntöd, hogy hazai gyümölcs-e vagy sem.
+
+Hozz létre egy kiíratás nevü függvényt ahol kiíród, hogy hazai-e vagy sem, milyen gyümölcs, és az árát.
+
+Kérj be a felhasználótól legalább 4 gyümölcsöt értékekkel együtt, majd irasd ki ezeket.
+ 
+
+
+3.Írj egy szerkharsz függvényt. Három paramétere legyen (a, b, c). 
+Igazat adjon eredményül a függvény ha szerkeszthetõ a háromszög, hamisat ha nem.
