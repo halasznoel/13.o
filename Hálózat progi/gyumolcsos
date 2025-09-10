@@ -1,0 +1,24 @@
+class Gyumolcsok:
+    def __init__(self, gyum, ar, hazai):
+        self.gyum = gyum
+        self.ar = ar
+        self.hazai = hazai
+    
+    def szarmazas(self):
+        if self.hazai == "i":
+            return "Ez a gyümölcs hazai."
+        else:
+            return "Ez a gyümölcs külföldi."
+    
+    def kiir(self):
+        print(f"A {self.hazai,self.gyum} 1 kg {self.ar} Ft-ba kerül.")
+
+Gyumik=[]
+for i in range(2):
+    gy = input("Add meg a gyümölcs nevét: ")
+    a = input("Add meg a gyümölcs árát: ")
+    h = input("Hazai-e (i/n): ")
+    Gyumik.append(Gyumolcsok(gy,a,h))
+
+for i in Gyumik:
+    print(i.gyum,i.ar,i.hazai)
