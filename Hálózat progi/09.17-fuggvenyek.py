@@ -87,3 +87,20 @@ import random
 #         szam = random.randint(1,20)
 
 # matek(random.randit(1,20))
+
+
+
+
+
+
+# #7. feladat
+# def faktor():
+#     for i in range(5):
+#         szam = random.randint(10,50)
+#         fakt = 1
+#         for j in range(1,szam+1):
+#             fakt *= j
+#         print(f"{szam}! = {fakt}")
+# faktor()
+
+
