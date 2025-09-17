@@ -52,6 +52,4 @@
 # N = int(input("Kérem N értékét: "))
 # szamolas()
 
-
-
     
