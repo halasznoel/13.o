@@ -17,17 +17,17 @@ import random
 
 
 # #2. feladat
-# def elojel(szam):
-#     if szam == 0:
-#         return 'z'
-#     elif szam > 0:
-#         return 'p'
-#     else:
-#         return 'n'
-# for i in range(5):
-#     szam = random.randint(-20,20)
-#     print(szam, elojel(szam))
-# elojel(random.randint(-20,20))
+def elojel(szam):
+    if szam == 0:
+        return 'z'
+    elif szam > 0:
+        return 'p'
+    else:
+        return 'n'
+for i in range(5):
+    szam = random.randint(-20,20)
+    print(szam, elojel(szam))
+elojel(random.randint(-20,20))
 
 
 
