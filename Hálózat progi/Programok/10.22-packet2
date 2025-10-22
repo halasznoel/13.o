@@ -1,0 +1,14 @@
+import json
+import requests
+
+api_url = "http://127.0.0.1:58000/api/v1/network-device"
+headers={"X-Auth-Token": "NC-5-3c6f632d1a8c48db80f5-nbi"}
+resp = requests.get(api_url, headers=headers, verify=False)
+
+print("Request status: ", resp.status_code)
+
+response_json = resp.json()
+networkDevices = response_json["response"]
+
+for networkDevice in networkDevices:
+    print(networkDevice["hostname"], "\t", networkDevice["platformId"], "\t", networkDevice["managementIpAddress"])
