@@ -20,19 +20,18 @@ def cisco_login(hostname, username, password, enable_password):
             if '#' in enable_output:
                 print("Login successful! Entered privilige mode")
             else:
-                print("Enable mode failed")
-                print("Login failed")
+                print("Enable mode failed!")
+                print("Login failed!")
         else:
-            print("Login failed")
+            print("Login failed!")
         ssh.close()
     except Exception as e:
         print(f"Error: {e}")
-        print("Login failed")
+        print("Login failed!")
 
 if __name__ == "__main__":
-    device_hostname = "10.1.102.160"
+    device_hostname = "10.1.102.161"
     device_username = "admin"
     device_password = "cisco"
     device_enable_password = "cisco"
-
 cisco_login(device_hostname, device_username, device_password, device_enable_password)

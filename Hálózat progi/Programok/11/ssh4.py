@@ -18,11 +18,20 @@ def cisco_login(hostname, username, password, enable_password):
             enable_output = channel.recv(65535).decode('utf-8')
             print(enable_output)
             if '#' in enable_output:
-                print("Login successful! Entered privilige mode")
+                print("Login successful! Entered privilege mode")
             else:
                 print("Enable mode failed")
                 print("Login failed")
         else:
+            print("Login failed")
+        if '#' in enable_output:
+            print("Login successful! Entered privilege mode")
+            channel.send("show ip interface brief | include ([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+)\n")
+            time.sleep(1)
+            ip_int_brief_output = channel.recv(65535).decode('utf-8')
+            print(ip_int_brief_output)
+        else:
+            print("Enable mode failed!")
             print("Login failed")
         ssh.close()
     except Exception as e:
@@ -35,4 +44,4 @@ if __name__ == "__main__":
     device_password = "cisco"
     device_enable_password = "cisco"
 
-cisco_login(device_hostname, device_username, device_password, device_enable_password)
+cisco_login(device_hostname,device_username,device_password,device_enable_password)
