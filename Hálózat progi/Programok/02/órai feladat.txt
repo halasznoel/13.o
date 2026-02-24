@@ -1,0 +1,5 @@
+canon03.py fájlon kell elvégezni a módosításokat (mesterséges intelligenciát, illetve más segítséget ne használj!)
+1. Hozz létre két új játékost Laci és Dóra néven.
+2. Alapértelemezett ágyúcsőhossz 25 legyen
+3. Billy színe sárga legyen
+4. Kezdősebesség 15 legyen
