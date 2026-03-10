@@ -64,6 +64,7 @@ exit
 
 line vty 0 15
 access-class VTY-BLOCK in
+exit
 
 --------------------------
 RTR-2:
@@ -139,8 +140,6 @@ int s0/1/1
 ip ospf cost 50
 exit
 
-
-int g0/0/0
 router ospf 10
 passive-interface g0/0/0
 exit
@@ -155,12 +154,11 @@ router ospf 10
 network 192.168.33.1 0.0.0.15 area 0
 network 10.10.0.245 0.0.0.3 area 0
 network 10.10.0.242 0.0.0.3 area 0
-
+exit
 
 router ospf 10
 auto-cost reference-bandwidth 10000
 exit
-
 
 ntp server 192.168.33.14
 
